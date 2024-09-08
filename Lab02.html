@@ -7,6 +7,78 @@
     <script src="/Lab02.js"></script>
 </head>
 <body>
+    <p>27. Create a function that will receive an array of numbers as argument and will return a new array with distinct elements</p>
+    <script>
+        document.write("Array with distinct elements: " + distinctArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+    </script>
+    <p>28. Calculate the sum of first 100 prime numbers and return them in an array</p>
+    <script>
+        document.write("Sum of first 100 prime numbers: " + sumPrimes());
+    </script>
+    <p>29. Print the distance between the first 100 prime numbers </p>
+    <script>
+        document.write("Distance between the first 100 prime numbers: " + primeDistance());
+    </script>
+    <p>30. Create a function that will add two positive numbers of indefinite size. The numbers are received as strings and the result should be also provided as string.
+        function addStrings(a, b) </p>
+    <script>
+        document.write("Sum of two positive numbers: " + addStrings("123456789012345678901234567890", "987654321098765432109876543210"));
+    </script>
+    <p>31. Create a function that will return the number of words in a text</p>
+    <script>
+        document.write("Number of words in a text: " + wordCount("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."));
+    </script>
+    <p>32. Create a function that will capitalize the first letter of each word in a text</p>
+    <script>
+        document.write("Capitalize the first letter of each word in a text: " + capitalizeWords("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."));
+    </script>
+    <p>33. Calculate the sum of numbers received in a comma delimited string</p>
+    <script>
+        document.write("Sum of numbers received in a comma delimited string: " + sumNumbers("1,2,3,4,5,6,7,8,9,10"));
+    </script>
+    <p>34. Create a function that will return an array with words inside a text</p>
+    <script>
+        document.write("Array with words inside a text: " + wordsArray("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."));
+    </script>
+    <p>35. Create a function to convert a CSV text to a “bi-dimensional” array</p>
+    <script>
+        document.write("CSV text to a bi-dimensional array: " + csvToArray("a,b,c\n1,2,3\n4,5,6"));
+    </script>
+    <p>36. Create a function that converts a string to an array of characters</p>
+    <script>
+        document.write("String to an array of characters: " + stringToArray("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."));
+    </script>
+    <p>37. Create a function that will convert a string in an array containing the ASCII codes of each character</p>
+    <script>
+        document.write("String in an array containing the ASCII codes of each character: " + stringToAsciiArray("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."));
+    </script>
+    <p>38. Create a function that will convert an array containing ASCII codes in a string</p>
+    <script>
+        document.write("Array containing ASCII codes in a string: " + asciiArrayToString([76, 111, 114, 101, 109, 32, 105, 112, 115, 117, 109, 32, 100, 111, 108, 111, 114, 32, 115, 105, 116, 32, 97, 109, 101, 116, 44, 32, 99, 111, 110, 115, 101, 99, 116, 101, 116, 117, 114, 32, 97, 100, 105, 112, 105, 115, 99, 105, 110, 103, 32, 101, 108, 105, 116, 46, 32, 83, 101, 100, 32, 100, 111, 32, 101, 117, 105, 115, 109, 111, 100, 32, 116, 101, 109, 112, 111, 114, 32, 105, 110, 99, 105, 100, 105, 100, 117, 110, 116, 32, 117, 116, 32, 108, 97, 98, 111, 114, 101, 32, 101, 116, 32, 100, 111, 108, 111, 114, 101, 32, 109, 97, 103, 110, 97, 32, 97, 108, 105, 113, 117, 97, 46]));
+    </script>
+    <p>39. Implement the Caesar cypher</p>
+    <script>
+        document.write("Caesar cypher: " + caesarCypher("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 3));
+    </script>
+    <p>40. Implement the Caesar cypher decrypt</p>
+    <script>
+        document.write("Caesar cypher decrypt: " + caesarCypherDecrypt("Oryhp lvspv groru vlv dphw, frqwhqwudfh dglwvlpdjh ohwlw. Vhg gr hqjxglf wrpsru lwxqjodwh wuxqjohw xqodqld.", 3));
+    </script>
+    <p>41. Create a function to calculate the distance between two points defined by their x, y coordinates</p>
+    <script>
+        document.write("Distance between two points: " + distanceBetweenPoints(1, 1, 4, 5));
+    </script>
+    <p>42. Create a function that will receive a bi-dimensional array as argument and a
+         number and will extract as a unidimensional array the column specified by the
+         number</p>
+    <script>
+        document.write("Unidimensional array the column specified by the number: " + extractColumn([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 1));
+    </script>
+    <p>43. Create a function that will convert a string containing a binary number into a
+        number</p>
+    <script>
+        document.write("Binary number into a number: " + binaryToNumber("101010101010"));
+    </script>
     
 </body>
 </html>

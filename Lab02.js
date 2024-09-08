@@ -3,10 +3,16 @@ function distinctArray(arr) {
   return arr.filter((item, index) => arr.indexOf(item) === index);
 }
 // 28. Calculate the sum of first 100 prime numbers and return them in an array
-function isPrime(n) {
-  if (n < 2) return false;
-  for (let i = 2; i <= Math.sqrt(n); i++) if (n % i === 0) return false;
-  return true;
+function sumPrimes() {
+  const primes = [];
+  let sum = 0;
+  for (let i = 2; primes.length < 100; i++) {
+    if (isPrime(i)) {
+      primes.push(i);
+      sum += i;
+    }
+  }
+  return sum;
 }
 // 29. Print the distance between the first 100 prime numbers  
 function primeDistance() {
@@ -15,7 +21,7 @@ function primeDistance() {
   for (let i = 0; primes.length < 100; i++) {
     if (isPrime(i)) {
       primes.push(i);
-      console.log(i - lastPrime);
+      document.write(i - lastPrime);
       lastPrime = i;
     }
   }
@@ -127,10 +133,44 @@ function deepCopyJaggedArray(arr) {
   return JSON.parse(JSON.stringify(arr));
 }
 // 48. Create a function to return the longest word in a string
+function longestWord(text) {
+  return text.split(' ').reduce((longest, current) => current.length > longest.length ? current : longest);
+}
 // 49. Shuffle an array of strings
+function shuffleArray(arr) {
+  return arr.sort(() => Math.random() - 0.5);
+}
 // 50. Create a function that will receive n as argument and return an array of n
 // random numbers from 1 to n. The numbers should be unique inside the array.
+function randomNumbers(n) {
+  const numbers = [];
+  while (numbers.length < n) {
+    const number = Math.floor(Math.random() * n) + 1;
+    if (!numbers.includes(number)) numbers.push(number);
+  }
+  return numbers;
+}
 // 51. Find the frequency of letters inside a string. Return the result as an array of
 // arrays. Each subarray has 2 elements: letter and number of occurrences.
+function letterFrequency(text) {
+  const frequency = {};
+  text.split('').forEach(char => frequency[char] = (frequency[char] || 0) + 1);
+  return Object.entries(frequency);
+}
 // 52. Calculate Fibonacci(500) with high precision (all digits)
+function fibonacci(n) {
+  let a = 1n;
+  let b = 0n;
+  for (let i = 0; i < n; i++) {
+    [a, b] = [a + b, a];
+  }
+  return b;
+}
 // 53. Calculate 70! with high precision (all digits)
+function factorial(n) {
+  let result = 1n;
+  for (let i = 1n; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
